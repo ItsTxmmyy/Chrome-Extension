@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mental Status Exam</title>
+</head>
+<body>
+
+<form action="#" method="post">
+    <h2>OBSERVATIONS</h2>
+    <button type="button" id="selectNormalButton">Select All Normal</button>
+    <fieldset>
+        <legend>Appearance</legend>
+        <input type="checkbox" id="neat" name="appearance" value="neat">
+        <label for="neat">Neat</label><br>
+        <input type="checkbox" id="disheveled" name="appearance" value="disheveled">
+        <label for="disheveled">Disheveled</label><br>
+        <input type="checkbox" id="inappropriate" name="appearance" value="inappropriate">
+        <label for="inappropriate">Inappropriate</label><br>
+        <input type="checkbox" id="bizarre" name="appearance" value="bizarre">
+        <label for="bizarre">Bizarre</label><br>
+        <label for="other_appearance">
+            <input type="checkbox" id="other_appearance" name="appearance" value="other">
+            Other:
+        </label>
+        <input type="text" id="other_appearance_text" name="other_appearance_text"><br>
+    </fieldset>
+    <br>
+
+    <fieldset>
+        <legend>Speech</legend>
+        <input type="checkbox" id="normal_speech" name="speech" value="normal">
+        <label for="normal_speech">Normal</label><br>
+        <input type="checkbox" id="tangential" name="speech" value="tangential">
+        <label for="tangential">Tangential</label><br>
+        <input type="checkbox" id="pressured" name="speech" value="pressured">
+        <label for="pressured">Pressured</label><br>
+        <input type="checkbox" id="impoverished" name="speech" value="impoverished">
+        <label for="impoverished">Impoverished</label><br>
+        <label for="other_speech">
+            <input type="checkbox" id="other_speech" name="speech" value="other">
+            Other:
+        </label>
+        <input type="text" id="other_speech_text" name="other_speech_text"><br>
+    </fieldset>
+    <br>
+
+    <fieldset>
+        <legend>Eye Contact</legend>
+        <input type="checkbox" id="normal_eye_contact" name="eye_contact" value="normal">
+        <label for="normal_eye_contact">Normal</label><br>
+        <input type="checkbox" id="intense" name="eye_contact" value="intense">
+        <label for="intense">Intense</label><br>
+        <input type="checkbox" id="avoidant" name="eye_contact" value="avoidant">
+        <label for="avoidant">Avoidant</label><br>
+        <label for="other_eye_contact">
+            <input type="checkbox" id="other_eye_contact" name="eye_contact" value="other">
+            Other:
+        </label>
+        <input type="text" id="other_eye_contact_text" name="other_eye_contact_text"><br>
+    </fieldset>
+    <br>
+
+    <fieldset>
+        <legend>Motor Activity</legend>
+        <input type="checkbox" id="normal_motor_activity" name="motor_activity" value="normal">
+        <label for="normal_motor_activity">Normal</label><br>
+        <input type="checkbox" id="restless" name="motor_activity" value="restless">
+        <label for="restless">Restless</label><br>
+        <input type="checkbox" id="tics" name="motor_activity" value="tics">
+        <label for="tics">Tics</label><br>
+        <input type="checkbox" id="slowed" name="motor_activity" value="slowed">
+        <label for="slowed">Slowed</label><br>
+        <label for="other_motor_activity">
+            <input type="checkbox" id="other_motor_activity" name="motor_activity" value="other">
+            Other:
+        </label>
+        <input type="text" id="other_motor_activity_text" name="other_motor_activity_text"><br>
+    </fieldset>
+    <br>
+
+    <fieldset>
+        <legend>Affect</legend>
+        <input type="checkbox" id="full" name="affect" value="full">
+        <label for="full">Full</label><br>
+        <input type="checkbox" id="constricted" name="affect" value="constricted">
+        <label for="constricted">Constricted</label><br>
+        <input type="checkbox" id="flat" name="affect" value="flat">
+        <label for="flat">Flat</label><br>
+        <input type="checkbox" id="labile" name="affect" value="labile">
+        <label for="labile">Labile</label><br>
+        <label for="other_affect">
+            <input type="checkbox" id="other_affect" name="affect" value="other">
+            Other:
+        </label>
+        <input type="text" id="other_affect_text" name="other_affect_text"><br>
+    </fieldset>
+    <br>
+    <!-- Repeat the same structure for Speech, Eye Contact, Motor Activity, Affect, and their respective comments -->
+
+    <h2>MOOD</h2>
+    <fieldset>
+        <legend>Mood</legend>
+        <input type="checkbox" id="euthymic" name="mood" value="euthymic">
+        <label for="euthymic">Euthymic</label><br>
+        <input type="checkbox" id="anxious" name="mood" value="anxious">
+        <label for="anxious">Anxious</label><br>
+        <input type="checkbox" id="angry" name="mood" value="angry">
+        <label for="angry">Angry</label><br>
+        <input type="checkbox" id="depressed" name="mood" value="depressed">
+        <label for="depressed">Depressed</label><br>
+        <input type="checkbox" id="euphoric" name="mood" value="euphoric">
+        <label for="euphoric">Euphoric</label><br>
+        <input type="checkbox" id="irritable" name="mood" value="irritable">
+        <label for="irritable">Irritable</label><br>
+        <label for="other_mood">
+            <input type="checkbox" id="other_mood" name="mood" value="other">
+            Other:
+        </label>
+        <input type="text" id="other_mood_text" name="other_mood_text"><br>
+    </fieldset>
+    <br>
+
+    <!-- Mood comments -->
+
+    <h2>PERCEPTION</h2>
+    <fieldset>
+        <legend>Perception</legend>
+        <input type="checkbox" id="hallucinations_none" name="hallucinations" value="none">
+        <label for="hallucinations_none">None</label><br>
+        <input type="checkbox" id="hallucinations_auditory" name="hallucinations" value="auditory">
+        <label for="hallucinations_auditory">Auditory</label><br>
+        <input type="checkbox" id="hallucinations_visual" name="hallucinations" value="visual">
+        <label for="hallucinations_visual">Visual</label><br>
+        <label for="hallucinations_other">
+            <input type="checkbox" id="hallucinations_other" name="hallucinations" value="other">
+            Other:
+        </label>
+        <input type="text" id="hallucinations_other_text" name="hallucinations_other_text"><br><br>
+
+        <input type="checkbox" id="perception_none" name="perception" value="none">
+        <label for="perception_none">None</label><br>
+        <input type="checkbox" id="perception_derealization" name="perception" value="derealization">
+        <label for="perception_derealization">Derealization</label><br>
+        <input type="checkbox" id="perception_depersonalization" name="perception" value="depersonalization">
+        <label for="perception_depersonalization">Depersonalization</label><br>
+    </fieldset>
+    <br>
+
+    <!-- Perception comments -->
+
+    <h2>COGNITION</h2>
+    <fieldset>
+        <legend>Orientation Impairment</legend>
+        <input type="checkbox" id="none_orientation" name="orientation_impairment" value="None">
+        <label for="none_orientation">None</label><br>
+        <input type="checkbox" id="place_orientation" name="orientation_impairment" value="Place">
+        <label for="place_orientation">Place</label><br>
+        <input type="checkbox" id="object_orientation" name="orientation_impairment" value="Object">
+        <label for="object_orientation">Object</label><br>
+        <input type="checkbox" id="person_orientation" name="orientation_impairment" value="Person">
+        <label for="person_orientation">Person</label><br>
+        <input type="checkbox" id="time_orientation" name="orientation_impairment" value="Time">
+        <label for="time_orientation">Time</label><br>
+        <label for="other_orientation">
+            <input type="checkbox" id="other_orientation" name="orientation_impairment" value="other">
+            Other:
+        </label>
+        <input type="text" id="other_orientation_text" name="other_orientation_text"><br>
+    </fieldset>
+    <br>
+
+    <fieldset>
+        <legend>Memory Impairment</legend>
+        <input type="checkbox" id="none_memory" name="memory_impairment" value="None">
+        <label for="none_memory">None</label><br>
+        <input type="checkbox" id="short_term_memory" name="memory_impairment" value="Short-Term">
+        <label for="short_term_memory">Short-Term</label><br>
+        <input type="checkbox" id="long_term_memory" name="memory_impairment" value="Long-Term">
+        <label for="long_term_memory">Long-Term</label><br>
+        <label for="other_memory">
+            <input type="checkbox" id="other_memory" name="memory_impairment" value="other">
+            Other:
+        </label>
+        <input type="text" id="other_memory_text" name="other_memory_text"><br>
+    </fieldset>
+    <br>
+
+    <fieldset>
+        <legend>Attention</legend>
+        <input type="checkbox" id="normal_attention" name="attention" value="Normal">
+        <label for="normal_attention">Normal</label><br>
+        <input type="checkbox" id="distracted_attention" name="attention" value="Distracted">
+        <label for="distracted_attention">Distracted</label><br>
+        <label for="other_attention">
+            <input type="checkbox" id="other_attention" name="attention" value="Other">
+            Other:
+        </label>
+        <input type="text" id="other_attention_text" name="other_attention_text"><br>
+    </fieldset>
+    <br>
+
+    <!-- Cognition comments -->
+
+    <h2>THOUGHTS</h2>
+    <fieldset>
+        <legend>Suicidality</legend>
+        <input type="checkbox" id="none_suicidality" name="suicidality" value="None">
+        <label for="none_suicidality">None</label><br>
+        <input type="checkbox" id="ideation_suicidality" name="suicidality" value="Ideation">
+        <label for="ideation_suicidality">Ideation</label><br>
+        <input type="checkbox" id="plan_suicidality" name="suicidality" value="Plan">
+        <label for="plan_suicidality">Plan</label><br>
+        <input type="checkbox" id="intent_suicidality" name="suicidality" value="Intent">
+        <label for="intent_suicidality">Intent</label><br>
+        <input type="checkbox" id="self_harm_suicidality" name="suicidality" value="Self-Harm">
+        <label for="self_harm_suicidality">Self-Harm</label><br>
+    </fieldset>
+    <br>
+
+    <fieldset>
+        <legend>Homicidality</legend>
+        <input type="checkbox" id="none_homicidality" name="homicidality" value="None">
+        <label for="none_homicidality">None</label><br>
+        <input type="checkbox" id="aggressive_homicidality" name="homicidality" value="Aggressive">
+        <label for="aggressive_homicidality">Aggressive</label><br>
+        <input type="checkbox" id="intent_homicidality" name="homicidality" value="Intent">
+        <label for="intent_homicidality">Intent</label><br>
+        <input type="checkbox" id="plan_homicidality" name="homicidality" value="Plan">
+        <label for="plan_homicidality">Plan</label><br>
+    </fieldset>
+    <br>
+
+    <fieldset>
+        <legend>Delusions</legend>
+        <input type="checkbox" id="none_delusions" name="delusions" value="None">
+        <label for="none_delusions">None</label><br>
+        <input type="checkbox" id="grandiose_delusions" name="delusions" value="Grandiose">
+        <label for="grandiose_delusions">Grandiose</label><br>
+        <input type="checkbox" id="paranoid_delusions" name="delusions" value="Paranoid">
+        <label for="paranoid_delusions">Paranoid</label><br>
+        <input type="checkbox" id="religious_delusions" name="delusions" value="Religious">
+        <label for="religious_delusions">Religious</label><br>
+        <label for="other_delusions">
+            <input type="checkbox" id="other_delusions" name="delusions" value="Other">
+            Other:
+        </label>
+        <input type="text" id="other_delusions_text" name="other_delusions_text"><br>
+    </fieldset>
+    <br>
+
+    <!-- Thoughts comments -->
+
+    <h2>BEHAVIOR</h2>
+    <fieldset>
+        <legend>Behavior</legend>
+        <input type="checkbox" id="cooperative" name="behavior" value="Cooperative">
+        <label for="cooperative">Cooperative</label><br>
+        <input type="checkbox" id="guarded" name="behavior" value="Guarded">
+        <label for="guarded">Guarded</label><br>
+        <input type="checkbox" id="hyperactive" name="behavior" value="Hyperactive">
+        <label for="hyperactive">Hyperactive</label><br>
+        <input type="checkbox" id="agitated" name="behavior" value="Agitated">
+        <label for="agitated">Agitated</label><br>
+        <input type="checkbox" id="paranoid" name="behavior" value="Paranoid">
+        <label for="paranoid">Paranoid</label><br>
+        <input type="checkbox" id="stereotyped" name="behavior" value="Stereotyped">
+        <label for="stereotyped">Stereotyped</label><br>
+        <input type="checkbox" id="aggressive" name="behavior" value="Aggressive">
+        <label for="aggressive">Aggressive</label><br>
+        <input type="checkbox" id="bizarre" name="behavior" value="Bizarre">
+        <label for="bizarre">Bizarre</label><br>
+        <input type="checkbox" id="withdrawn" name="behavior" value="Withdrawn">
+        <label for="withdrawn">Withdrawn</label><br>
+        <label for="other_behavior">
+            <input type="checkbox" id="other_behavior" name="behavior" value="Other">
+            Other:
+        </label>
+        <input type="text" id="other_behavior_text" name="other_behavior_text"><br>
+    </fieldset>
+    <br>
+
+    <!-- Behavior comments -->
+
+    <h2>INSIGHT</h2>
+    <fieldset>
+        <legend>Insight</legend>
+        <input type="checkbox" id="good_insight" name="insight" value="Good">
+        <label for="good_insight">Good</label><br>
+        <input type="checkbox" id="fair_insight" name="insight" value="Fair">
+        <label for="fair_insight">Fair</label><br>
+        <input type="checkbox" id="poor_insight" name="insight" value="Poor">
+        <label for="poor_insight">Poor</label><br>
+    </fieldset>
+    <br>
+
+    <!-- Insight comments -->
+
+    <h2>JUDGMENT</h2>
+    <fieldset>
+        <legend>Judgment</legend>
+        <input type="checkbox" id="good_judgment" name="judgment" value="Good">
+        <label for="good_judgment">Good</label><br>
+        <input type="checkbox" id="fair_judgment" name="judgment" value="Fair">
+        <label for="fair_judgment">Fair</label><br>
+        <input type="checkbox" id="poor_judgment" name="judgment" value="Poor">
+        <label for="poor_judgment">Poor</label><br>
+    </fieldset>
+    <br>
+
+    <!-- Judgment comments -->
+
+    <button id="printButton" type="button">Print Selected Options</button>
+</form>
+
+<script src="form2.js"></script>
+</body>
+</html>
